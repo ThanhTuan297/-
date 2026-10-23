@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HSK Vocab</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'class' };</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex flex-col">
+  <header class="bg-red-700 dark:bg-red-950 text-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="#/" class="flex items-center gap-2">
+        <span class="bg-white text-red-700 px-2.5 py-0.5 rounded-lg text-sm font-black">HSK</span>
+        <span class="font-bold text-lg">Vocab</span>
+      </a>
+      <nav id="nav" class="hidden flex items-center gap-1">
+        <a data-nav="" href="#/" class="nav-link">Trang Chủ</a>
+        <a data-nav="hsk1" href="#/hsk1" class="nav-link">HSK 1</a>
+        <a data-nav="hsk2" href="#/hsk2" class="nav-link">HSK 2</a>
+        <a data-nav="hsk3" href="#/hsk3" class="nav-link">HSK 3</a>
+        <button onclick="toggleDarkMode()" class="ml-1 p-2 rounded-lg bg-red-800 dark:bg-slate-800 text-sm"><span id="theme-icon">🌙</span></button>
+        <button onclick="logout()" class="px-3 py-1.5 rounded-lg bg-red-900 text-xs font-semibold">Đăng xuất</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="view" class="max-w-4xl w-full mx-auto px-4 py-8 flex-grow"></main>
+
+  <footer class="bg-slate-900 text-slate-500 py-4 text-center text-xs">© 2026 HSK Vocab-TT</footer>
+
+  <script src="data.js"></script>
+  <script src="data-raw.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
