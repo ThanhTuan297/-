@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+:root{--bg-main:#f8fafc;--bg-card:#fff;--bg-sub:#f8fafc;--text-main:#0f172a;--text-muted:#64748b;--border-color:#e2e8f0}
+html.dark{--bg-main:#0b0f19;--bg-card:#131b2e;--bg-sub:#1e293b;--text-main:#f8fafc;--text-muted:#94a3b8;--border-color:#27354f}
+body{background:var(--bg-main);color:var(--text-main);transition:background .25s,color .25s;font-family:'Inter',system-ui,sans-serif}
+.custom-card{background:var(--bg-card);border:1px solid var(--border-color)}
+.custom-sub{background:var(--bg-sub);border:1px solid var(--border-color)}
+.nav-link{padding:.4rem .75rem;border-radius:.5rem;font-size:.85rem;font-weight:600}
+.nav-link:hover{background:rgba(255,255,255,.15)}
+.nav-link.active{background:rgba(0,0,0,.25)}
+.speak-btn{width:2.5rem;height:2.5rem;border-radius:9999px;background:#fee2e2;color:#b91c1c;display:inline-flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.speak-btn:hover{background:#fecaca}
+html.dark .speak-btn{background:#450a0a;color:#fca5a5}
+.correct-pulse{animation:cp .35s ease-out}
+@keyframes cp{50%{transform:scale(1.02)}}
