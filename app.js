@@ -54,7 +54,7 @@ if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') 
 /* ====== ĐĂNG NHẬP ====== */
 function handleLogin(e) {
   e.preventDefault();
-  if ($('#username').value.trim() === '030106' && $('#password').value.trim() === '030106') { sessionStorage.setItem('isLoggedIn', 'true'); route(); }
+  if ($('#username').value.trim() === '040106' && $('#password').value.trim() === '040106') { sessionStorage.setItem('isLoggedIn', 'true'); route(); }
   else $('#login-error').classList.remove('hidden');
 }
 function logout() { sessionStorage.removeItem('isLoggedIn'); location.hash = '#/'; route(); }
